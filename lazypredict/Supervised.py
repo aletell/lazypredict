@@ -71,7 +71,8 @@ removed_regressors = [
     "SVR",
     "KernelRidge",
     "QuantileRegressor",
-    "RANSACRegressor"
+    "RANSACRegressor",
+    "AdaBoostRegressor",
     
 ]
 
