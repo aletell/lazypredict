@@ -67,6 +67,11 @@ removed_regressors = [
     "RegressorChain", 
     "VotingRegressor",
     "GaussianProcessRegressor",
+    "NuSVR",
+    "SVR",
+    "KernelRidge",
+    "QuantileRegressor",
+    "RANSACRegressor"
     
 ]
 
