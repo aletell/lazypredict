@@ -65,7 +65,9 @@ removed_regressors = [
     "PLSRegression", 
     "RadiusNeighborsRegressor", 
     "RegressorChain", 
-    "VotingRegressor", 
+    "VotingRegressor",
+    "GaussianProcessRegressor",
+    
 ]
 
 CLASSIFIERS = [
@@ -95,7 +97,7 @@ numeric_transformer = Pipeline(
 categorical_transformer_low = Pipeline(
     steps=[
         ("imputer", SimpleImputer(strategy="constant", fill_value="missing")),
-        ("encoding", OneHotEncoder(handle_unknown="ignore", sparse=False)),
+        ("encoding", OneHotEncoder(handle_unknown="ignore",  sparse_output=False)),
     ]
 )
 
